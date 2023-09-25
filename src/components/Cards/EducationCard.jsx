@@ -73,15 +73,7 @@ const Top = styled.div`
     gap: 12px
 `
 
-const Image = styled.img`
-    height: 50px;
-    background-color: #000;
-    border-radius: 10px;
-    margin-top: 4px;
-    @media only screen and (max-width: 768px){
-        height: 40px;
-    }
-`
+
 
 const Body = styled.div`
     width: 100%;
@@ -132,7 +124,6 @@ const EducationCard = ({ education }) => {
     return (
         <Card>
             <Top>
-                <Image src={education.img} />
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>
