@@ -4,7 +4,7 @@ import { HeroContainer, HeroBg, HeroLeftContainer, Img, HeroRightContainer, Hero
 import MyPhotoImg from '../../images/MyPhoto.jpg'
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
-
+import {AiOutlineDownload} from 'react-icons/ai'
 const HeroSection = () => {
     return (
         <div id="about">
@@ -14,7 +14,7 @@ const HeroSection = () => {
                 </HeroBg>
                 <HeroInnerContainer >
                     <HeroLeftContainer id="Left">
-                        <Title>Hi, I am <br /> {Bio.name}</Title>
+                        <Title>Hello, I am <br /> {Bio.name}</Title>
                         <TextLoop>
                             I am a
                             <Span>
@@ -29,7 +29,10 @@ const HeroSection = () => {
                             </Span>
                         </TextLoop>
                         <SubTitle>{Bio.description}</SubTitle>
-                        <ResumeButton href={Bio.resume} target='display'>Resume</ResumeButton>
+                        <ResumeButton href={Bio.resume} target='display'> Resume  <AiOutlineDownload size='25px'
+                        
+                        /></ResumeButton>
+                        
                     </HeroLeftContainer>
 
                     <HeroRightContainer id="Right">

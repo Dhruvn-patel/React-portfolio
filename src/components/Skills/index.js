@@ -122,12 +122,12 @@ const Skills = () => {
       <Wrapper>
         <Title>Skills</Title>
         <SkillsContainer>
-          {skills.map((skill) => (
-            <Skill>
+          {skills.map((skill, index) => (
+            <Skill key={index}>
               <SkillTitle>{skill.title}</SkillTitle>
               <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
+                {skill.skills.map((item, index1) => (
+                  <SkillItem key={index1}>
                     <SkillImage src={item.image} />
                     {item.name}
                   </SkillItem>

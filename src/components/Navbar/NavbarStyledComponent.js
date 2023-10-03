@@ -127,13 +127,14 @@ export const MobileMenu = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 16px;
     position: absolute;
     top: 80px;
     right: 0;
     width: 100%;
     padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light+99};
+    background: ${({ theme }) => theme.card_light+98};
     transition: all 0.6s ease-in-out;
     transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
     border-radius: 0 0 20px 20px;

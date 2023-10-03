@@ -135,7 +135,7 @@ const Contact = () => {
         setOpen(true);
         form.current.reset();
       }, (error) => {
-        console.log(error.text);
+        
       });
   }
 

@@ -173,6 +173,10 @@ export const ResumeButton = styled.a`
     -moz-appearance: button;
     appearance: button;
     text-decoration: none;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    gap:10px;
     width: 95%;
     max-width: 300px;
     text-align: center;
